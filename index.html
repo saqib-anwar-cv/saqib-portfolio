@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I migrate slow, bottlenecked Python AI prototypes into high-speed, zero-copy C++/CUDA production architectures for the DACH region.">
+    <meta property="og:title" content="Saqib Anwar | Computer Vision Performance Architect">
+    <meta property="og:description" content="Stop burning budget on cloud GPUs. High-speed C++/CUDA pipeline optimization.">
+    <meta property="og:type" content="website">
     <title>Saqib Anwar | Computer Vision Performance Architect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
+
         tailwind.config = {
             theme: {
                 extend: {
@@ -13,10 +18,21 @@
                         brand: '#10b981', 
                         dark: '#0f172a', 
                         card: '#1e293b'  
+                    },
+                    // Add this animation block below
+                    animation: {
+                        marquee: 'marquee 25s linear infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        }
                     }
                 }
             }
         }
+
     </script>
 </head>
 <body class="bg-dark text-slate-300 font-sans antialiased selection:bg-brand selection:text-white">
@@ -30,25 +46,63 @@
         </div>
     </nav>
 
-    <section class="container mx-auto px-6 py-20 md:py-32 max-w-4xl">
+    <section class="container mx-auto px-6 py-20 md:py-32 max-w-4xl text-center md:text-left">
         <div class="inline-block bg-brand/10 text-brand px-3 py-1 rounded-full text-sm font-semibold mb-6 border border-brand/20">
             Freelance CV Performance Architect • DACH Region
         </div>
         <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 tracking-tight">
             Stop burning budget on cloud GPUs.
         </h1>
-        <p class="text-xl md:text-2xl text-slate-400 mb-10 leading-relaxed max-w-3xl">
+        <p class="text-xl md:text-2xl text-slate-400 mb-10 leading-relaxed max-w-3xl mx-auto md:mx-0">
             I migrate slow, bottlenecked Python AI prototypes into high-speed, zero-copy <strong class="text-slate-200">C++/CUDA</strong> production architectures. Hit your FPS targets directly on the edge.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4">
-            <a href="https://calendar.app.google/tMZyRY2nZ1LyX8rZ9" target="_blank" class="bg-brand text-dark px-8 py-4 rounded-lg font-bold text-lg text-center hover:bg-emerald-400 transition duration-300 shadow-lg shadow-brand/20">
+        <div class="flex flex-col sm:flex-row items-center gap-4">
+            <a href="https://calendar.app.google/tMZyRY2nZ1LyX8rZ9" target="_blank" class="bg-brand text-dark px-8 py-4 rounded-lg font-bold text-lg text-center hover:bg-emerald-400 transition duration-300 shadow-lg shadow-brand/20 w-full sm:w-auto">
                 Book a 15-Min Architecture Review
             </a>
-            <a href="#proof" class="px-8 py-4 rounded-lg font-bold text-lg text-center text-white border border-slate-700 hover:border-slate-500 transition duration-300">
+            <a href="#proof" class="px-8 py-4 rounded-lg font-bold text-lg text-center text-white border border-slate-700 hover:border-slate-500 transition duration-300 w-full sm:w-auto">
                 See the Data
             </a>
         </div>
+        <div class="mt-4 text-sm text-slate-500">
+            Prefer to write? <a href="mailto:saqib@saqib-anwar.com" class="text-brand hover:underline">Email me directly.</a>
+        </div>
     </section>
+
+
+
+    <div class="border-t border-slate-800 bg-card/20 py-8 overflow-hidden relative">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <p class="text-center text-[10px] font-bold text-slate-500 mb-6 tracking-[0.2em] uppercase">Core Production Stack</p>
+        </div>
+        
+        <div class="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-dark to-transparent z-10 pointer-events-none"></div>
+        <div class="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-dark to-transparent z-10 pointer-events-none"></div>
+
+        <div class="flex overflow-hidden select-none w-full">
+            <div class="flex items-center justify-around min-w-full shrink-0 gap-16 animate-marquee text-slate-400 font-semibold tracking-tight text-base md:text-lg">
+                <div class="whitespace-nowrap"><span class="text-[#76B900] text-xl mr-2">■</span>NVIDIA CUDA</div>
+                <div class="whitespace-nowrap"><span class="text-[#76B900] text-xl mr-2">■</span>DeepStream</div>
+                <div class="whitespace-nowrap"><span class="text-[#76B900] font-black">Tensor</span>RT</div>
+                <div class="whitespace-nowrap"><span class="text-[#00599C] font-black mr-1">C++</span>Architecture</div>
+                <div class="whitespace-nowrap"><span class="text-red-500 font-black">O</span>penCV Pipeline</div>
+                <div class="whitespace-nowrap"><span class="text-slate-200 font-black">FF</span>mpeg / libav</div>
+                <div class="whitespace-nowrap"><span class="text-[#EE4C2C] font-black">Py</span>Torch</div>
+            </div>
+            
+            <div class="flex items-center justify-around min-w-full shrink-0 gap-16 animate-marquee text-slate-400 font-semibold tracking-tight text-base md:text-lg" aria-hidden="true">
+                <div class="whitespace-nowrap"><span class="text-[#76B900] text-xl mr-2">■</span>NVIDIA CUDA</div>
+                <div class="whitespace-nowrap"><span class="text-[#76B900] text-xl mr-2">■</span>DeepStream</div>
+                <div class="whitespace-nowrap"><span class="text-[#76B900] font-black">Tensor</span>RT</div>
+                <div class="whitespace-nowrap"><span class="text-[#00599C] font-black mr-1">C++</span>Architecture</div>
+                <div class="whitespace-nowrap"><span class="text-red-500 font-black">O</span>penCV Pipeline</div>
+                <div class="whitespace-nowrap"><span class="text-slate-200 font-black">FF</span>mpeg / libav</div>
+                <div class="whitespace-nowrap"><span class="text-[#EE4C2C] font-black">Py</span>Torch Inference</div>
+            </div>
+        </div>
+    </div>
+
+
 
     <section id="proof" class="bg-card py-20 border-y border-slate-800">
         <div class="container mx-auto px-6 max-w-5xl">
@@ -100,47 +154,101 @@
         </div>
     </section>
 
-    <section id="services" class="container mx-auto px-6 py-24 max-w-5xl">
-        <h2 class="text-3xl font-bold text-white mb-12 text-center">How We Work Together</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="border border-slate-700 p-8 rounded-xl hover:border-slate-500 transition duration-300">
-                <h3 class="text-2xl font-bold text-white mb-2">Inference Pipeline Audit</h3>
-                <p class="text-brand font-mono mb-6">€1,800 • 3-Day Turnaround</p>
-                <p class="text-slate-400 mb-6">Before refactoring your codebase, we need an exact diagnosis. I use NVIDIA Nsight to profile your existing inference stack and pinpoint the exact memory transfer and compute bottlenecks.</p>
-                <ul class="space-y-2 text-sm text-slate-300 mb-8 list-disc list-inside">
-                    <li>Comprehensive GPU/CPU bottleneck mapping</li>
-                    <li>VRAM optimization analysis</li>
-                    <li>Step-by-step C++/CUDA execution roadmap</li>
-                    <li><em class="text-slate-500">Fee fully credited if hired for implementation.</em></li>
-                </ul>
-            </div>
+    <section id="about" class="container mx-auto px-6 py-24 max-w-5xl">
+        <div class="bg-card border border-slate-800 rounded-2xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-brand/5 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
 
-            <div class="border border-slate-700 p-8 rounded-xl hover:border-slate-500 transition duration-300">
-                <h3 class="text-2xl font-bold text-white mb-2">Custom C++ Optimization</h3>
-                <p class="text-brand font-mono mb-6">Custom Quoted</p>
-                <p class="text-slate-400 mb-6">Full migration of your slow Python prototypes into robust, hardware-accelerated C++ applications. Built specifically for your target hardware, from NVIDIA Jetson to heavy RTX servers.</p>
-                <ul class="space-y-2 text-sm text-slate-300 mb-8 list-disc list-inside">
-                    <li>Zero-copy unified memory architecture</li>
-                    <li>TensorRT engine compilation & quantization</li>
-                    <li>Hardware-accelerated media decoding (NVDEC/libav)</li>
-                    <li>Multi-stream RTSP processing</li>
-                </ul>
+            <div class="grid md:grid-cols-5 gap-12 items-center relative z-10">
+                <div class="md:col-span-3">
+                    <h2 class="text-3xl font-bold text-white mb-6">About the Architect</h2>
+                    <p class="text-slate-400 mb-6 leading-relaxed text-lg">
+                        I am a Computer Vision Performance Architect with over <strong class="text-slate-200">7 years of specialized experience</strong> deploying production-grade deep learning systems across the DACH region. 
+                    </p>
+                    <p class="text-slate-400 mb-8 leading-relaxed">
+                        Holding an M.Sc. in Automotive Engineering and a deep background in hardware integration, I don't just write code; I architect systems that respect physical hardware limits. Operating as <strong class="text-white">Ingenieurbüro Anwar</strong>, I partner with AI startups and industrial manufacturers to bridge the gap between Python research prototypes and robust, hardware-accelerated C++/CUDA reality.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-dark border border-slate-700 text-slate-300 px-4 py-2 rounded-lg text-sm font-medium flex items-center shadow-sm">
+                            <svg class="w-4 h-4 mr-2 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            M.Sc. Automotive Engineering
+                        </span>
+                        <span class="bg-dark border border-slate-700 text-slate-300 px-4 py-2 rounded-lg text-sm font-medium flex items-center shadow-sm">
+                            <svg class="w-4 h-4 mr-2 text-brand" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            7+ Years DACH Experience
+                        </span>
+                    </div>
+                </div>
+
+                <div class="md:col-span-2 flex justify-center">
+                    <div class="relative w-full max-w-sm aspect-square rounded-xl overflow-hidden border border-slate-700 group shadow-lg">
+                        <img src="photo.png" alt="Saqib Anwar" class="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/20 to-transparent"></div>
+                        <div class="absolute bottom-5 left-5">
+                            <div class="text-white font-bold text-xl tracking-tight">Saqib Anwar</div>
+                            <div class="text-brand text-sm font-mono mt-1">Ingenieurbüro Anwar</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="mt-12 text-center">
-             <a href="https://calendar.app.google/tMZyRY2nZ1LyX8rZ9" target="_blank" class="inline-block bg-brand text-dark px-8 py-4 rounded-lg font-bold text-lg hover:bg-emerald-400 transition duration-300">
-                Let's discuss your hardware constraints
-            </a>
         </div>
     </section>
 
+    <section id="services" class="container mx-auto px-6 py-24 max-w-5xl">
+        <h2 class="text-3xl font-bold text-white mb-2 text-center">Optimization Services</h2>
+        <p class="text-slate-400 mb-12 text-center max-w-2xl mx-auto text-sm">Rigorous, data-backed performance pipelines engineered for mission-critical computer vision systems.</p>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="border border-slate-700 bg-card/10 p-8 rounded-xl hover:border-slate-500 transition duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="text-xs font-mono tracking-[0.15em] text-slate-400 uppercase mb-3 font-semibold">Phase 01 // Diagnostic</div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Inference Pipeline Audit</h3>
+                    <p class="text-brand font-mono mb-6 text-lg font-bold">€1,800 <span class="text-slate-400 text-xs font-sans font-normal ml-2">• 72-Hour Turnaround</span></p>
+                    <p class="text-slate-300 mb-6 text-sm leading-relaxed">Before refactoring production code, we establish an empirical baseline. Utilizing NVIDIA Nsight Systems and Compute, I profile your entire inference stack to map out memory transfer overheads, CPU-GPU serialization gaps, and unoptimized kernels.</p>
+                    <ul class="space-y-3 text-sm text-slate-200 mb-8 list-none font-medium">
+                        <li class="flex items-start"><span class="text-brand mr-2.5 font-bold">✓</span> Comprehensive GPU/CPU bottleneck mapping</li>
+                        <li class="flex items-start"><span class="text-brand mr-2.5 font-bold">✓</span> VRAM allocation and unified memory analysis</li>
+                        <li class="flex items-start"><span class="text-brand mr-2.5 font-bold">✓</span> Step-by-step C++/CUDA execution roadmap</li>
+                    </ul>
+                </div>
+                <div class="text-xs text-slate-400 border-t border-slate-800/80 pt-4 font-medium">
+                    *Fee is fully credited against subsequent implementation phases.
+                </div>
+            </div>
 
+            <div class="border border-brand/30 bg-brand/[0.02] p-8 rounded-xl relative overflow-hidden flex flex-col justify-between shadow-lg shadow-brand/5">
+                <div class="absolute top-0 right-0 bg-brand text-dark text-[10px] font-bold tracking-widest px-3 py-1 rounded-bl-lg uppercase">Production Systems</div>
+                <div>
+                    <div class="text-xs font-mono tracking-[0.15em] text-brand uppercase mb-3 font-semibold">Phase 02 // Execution</div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Custom Pipeline Optimization</h3>
+                    <p class="text-brand font-mono mb-6 text-lg font-bold">Custom Quoted <span class="text-emerald-400/80 text-xs font-sans font-normal ml-2">• Typically €12K - €25K</span></p>
+                    <p class="text-slate-300 mb-6 text-sm leading-relaxed">Full architectural migration of bottlenecked prototypes into robust, hardware-accelerated native infrastructure. Engineered specifically for your deployment envelope, from edge Jetson nodes to dense multi-GPU server architectures.</p>
+                    <ul class="space-y-3 text-sm text-slate-200 mb-8 list-none font-medium">
+                        <li class="flex items-start"><span class="text-brand mr-2.5 font-bold">✓</span> Zero-copy unified memory & custom CUDA kernels</li>
+                        <li class="flex items-start"><span class="text-brand mr-2.5 font-bold">✓</span> TensorRT engine compilation & INT8 quantization</li>
+                        <li class="flex items-start"><span class="text-brand mr-2.5 font-bold">✓</span> Multi-stream hardware media decoding (NVDEC/libav)</li>
+                    </ul>
+                </div>
+                <div class="text-xs text-slate-400 border-t border-slate-800/80 pt-4 font-medium">
+                    Scoped directly from the execution roadmap established in Phase 01.
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-12 text-center">
+             <a href="https://calendar.app.google/tMZyRY2nZ1LyX8rZ9" target="_blank" class="inline-block bg-brand text-dark px-8 py-4 rounded-lg font-bold text-lg hover:bg-emerald-400 transition duration-300 shadow-md shadow-brand/10">
+                Initiate Technical Discovery Call
+            </a>
+            <div class="mt-4 text-sm text-slate-400 font-medium">
+                Prefer an NDA upfront? <a href="mailto:saqib@saqib-anwar.com" class="text-brand hover:underline font-semibold">Email your document directly.</a>
+            </div>
+        </div>
+    </section>
 
     <footer class="bg-card py-8 border-t border-slate-800">
         <div class="container mx-auto px-6 max-w-5xl flex flex-col md:flex-row justify-between items-center">
             <div class="text-slate-500 text-sm mb-4 md:mb-0">
-                &copy; 2026 Saqib Anwar. All rights reserved.
+                &copy; 2026 Ingenieurbüro Anwar. All rights reserved.
             </div>
             <div class="flex items-center space-x-6 text-sm text-slate-400">
                 <a href="mailto:saqib@saqib-anwar.com" class="flex items-center hover:text-brand transition group">
